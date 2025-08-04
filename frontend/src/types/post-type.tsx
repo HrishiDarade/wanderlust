@@ -6,7 +6,6 @@ type Post = {
   timeOfPost: string;
   description: string;
   categories: string[];
-  authorId?: string;
 };
 
 export default Post;
