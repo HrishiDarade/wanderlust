@@ -3,7 +3,7 @@
 echo "🔄 Updating backend environment for Minikube..."
 
 # Get Minikube IP
-ipv4_address=$(minikube ip)
+ipv4_address=192.168.49.2
 
 if [ -z "$ipv4_address" ]; then
     echo "❌ ERROR: Could not get Minikube IP. Is Minikube running?"
