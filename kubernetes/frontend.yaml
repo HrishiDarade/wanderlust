@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: hrishidarade/wanderlust-frontend:v2
+          image: hrishidarade/wanderlust-frontend:v3
           ports:
             - containerPort: 5173
 ---
