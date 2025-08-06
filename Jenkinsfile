@@ -50,7 +50,7 @@ pipeline{
         stage("OWASP: Dependency Check"){
             steps{
                 script{
-                    owasp_depndency()
+                    owasp_dependency()
                 }
             }
         }
@@ -73,8 +73,8 @@ pipeline{
 
         stage("Exporting Environment Variables"){
             parallel{
-                stage{
-                    steps("Backend env setup"){
+                stage("Backend env setup"){
+                    steps{
                         script{
                             dir("Automations"){
                                 sh "bash updatebackend.sh"
