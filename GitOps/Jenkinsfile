@@ -54,7 +54,7 @@ pipeline{
         stage("Git: Code update and push to github"){
             steps{
                 script{
-                    withCredentials([gitUsernamePassword(credentialsId: 'Github-cred', gitToolName: 'Default')]) {
+                    withCredentials([gitUsernamePassword(credentialsId: 'GithubCred', gitToolName: 'Default')]) {
                          sh '''
                         echo "Checking repository status: "
                         git status
